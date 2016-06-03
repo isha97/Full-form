@@ -1,0 +1,54 @@
+
+    <template name = "landingPageTemplate">
+<section id = "formsec">
+        <div class="top-content">
+
+            <div class="inner-bg">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-8 col-sm-offset-2 text">
+                            <h2><strong>Information Form</strong> </h2>
+                        </div>
+                    </div>
+                    <div class="row">
+
+                        <div class="col-sm-5 form-box">
+                        	<div class="form-top">
+                        		<div class="form-top-left">
+                        			<h3>Add your Information</h3>
+                            		<p>Fill in the form below:</p>
+                        		</div>
+                        		<div class="form-top-right">
+                        			<i class="fa fa-pencil"></i>
+                        		</div>
+                            </div>
+                            <div class="form-bottom">
+                              {{#autoForm collection="UsersCollection" id="insertUserForm" type="insert" }}
+                                <fieldset>
+
+                                  {{> afQuickField name='name'}}
+                                  {{> afQuickField name='gender' options = 'allowed'}}
+                                  {{> afQuickField name='contactDetails'}}
+                                  {{> afQuickField name='email'}}
+                                  {{> afQuickField name='address'}}
+                                  {{> afQuickField name='age'}}
+                                  {{> afQuickField name = 'nationality'}}
+                                  {{> afQuickField name='dob'}}
+                                  {{> afQuickField name='qualification'}}
+                                  {{> afQuickField name='mode' options = 'allowed'}}
+
+                                </fieldset>
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                                <button type="reset" class="btn btn-default">Reset Form</button>
+                              {{/autoForm}}
+		                    </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+</section>
+
+
+    </template>

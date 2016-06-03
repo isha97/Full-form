@@ -1,0 +1,20 @@
+<template name = "landingPageTemplate">
+  {{#autoForm collection="UsersCollection" id="insertUserForm" type="insert" }}
+    <fieldset>
+    <center><h1 style="font-family:Lucida Calligraphy Italic;">Add Information</h1></center>
+      {{> afQuickField name='name'}}
+      {{> afQuickField name='gender' options = 'allowed'}}
+      {{> afQuickField name='contactDetails'}}
+      {{> afQuickField name='email'}}
+      {{> afQuickField name='address'}}
+      {{> afQuickField name='age'}}
+      {{> afQuickField name = 'nationality'}}
+      {{> afQuickField name='dob'}}
+      {{> afQuickField name='qualification'}}
+      {{> afQuickField name='mode' options = 'allowed'}}
+
+    </fieldset>
+    <button type="submit" class="btn btn-primary">Submit</button>
+    <button type="reset" class="btn btn-default">Reset Form</button>
+  {{/autoForm}}
+</template>

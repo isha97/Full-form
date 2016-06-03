@@ -1,0 +1,31 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,300,100,700,100italic,300italic,400italic,700italic);
+
+/*************************
+*******Typography******
+**************************/
+body {
+  padding-top: 100px;
+  background: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  color: #64686d;
+  line-height: 26px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+  font-family: 'Roboto', sans-serif;
+  color: #272727;
+}
+.form-control {
+  box-shadow: none;
+  -webkit-box-shadow: none;
+}
+#formsec {
+background: url(../img/1.jpg) no-repeat ; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; 
+background-size: cover; height: 1500px; margin-bottom:0px; padding: 0px 0px; }
+
